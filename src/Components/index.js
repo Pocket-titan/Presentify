@@ -43,6 +43,12 @@ export const WorkingArea = props => {
   )
 }
 
+export const Icon = props => {
+  return (
+    <i {...props} className={`${props.name} ${props.className}`}/>
+  )
+}
+
 export class Terminal extends Component {
   componentDidMount() {
     // this.input.focus()
